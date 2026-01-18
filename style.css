@@ -1,6 +1,49 @@
 /* google font -> Inter  */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
+* {
     font-family: "Inter", sans-serif;
+}
+
+nav {
+    width: 75%;
+    max-width: 1600px;
+}
+
+#brand h1 span {
+    background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#bars {
+    display: none;
+}
+
+#btn {
+    background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+}
+
+
+@media screen and (max-width: 576px) {
+    #brand h1 {
+        font-size: 1.75rem;
+    }
+    nav {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    #bars {
+        display: block;
+    }
+    #bars img {
+        width: 24px;
+        height: 24px;
+    }
+    #right-nav {
+        display: none;
+    }
 }
