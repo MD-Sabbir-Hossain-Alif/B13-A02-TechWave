@@ -12,7 +12,7 @@
 
 <body>
     <header class="bg-[#1A0B2E]">
-        <nav class="mx-auto text-white flex items-center gap-[314px] py-7.5">
+        <nav class="mx-auto text-white flex items-center gap-[280px] py-7.5">
             <div id="brand">
                 <h1 class="text-white text-5xl font-extrabold">Tech<span>Wave</span></h1>
             </div>
@@ -25,10 +25,38 @@
                     <li><a href="">Episodes</a></li>
                     <li><a href="">Host</a></li>
                 </ul>
-                <button id="btn" class="px-4 py-3 rounded-full cursor-pointer">Subscribe <img class="w-6 inline" src="./images/right-arrow.png"></button>
+                <button class="btn px-4 py-3 font-semibold rounded-full cursor-pointer">Subscribe <img class="w-6 inline"
+                        src="./images/right-arrow.png"></button>
             </div>
         </nav>
     </header>
+
+    <main>
+        <!-- hero section  -->
+        <section id="hero" class="py-25">
+            <div id="hero-container" class="w-[550px] mx-auto text-center">
+                <div id="hero-image" class="mx-auto w-[350px] relative mb-10">
+                    <img class="w-[350px]" src="./images/hero-circle.png" alt="">
+                    <img class="absolute inset-20  mx-auto z-1" src="/images/microphone.png" alt="">
+                    <button class="absolute text-lg font-semibold bg-[#00FF88] top-3 right-3 z-2  text-[#1A0B2E] px-4 py-2 rounded-full animate-glow cursor-pointer">
+                        NEW
+                    </button>
+                </div>
+
+                <div id="hero-content" class="text-white ">
+                    <h1 class="text-6xl font-extrabold mb-2">TechWave</h1>
+                    <p class="opacity-80 leading-[19px]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div id="btns" class="space-x-2 mt-6 ">
+                        <button class="btn px-4 py-3 rounded-full cursor-pointer font-semibold inline-flex gap-1"><img class="w-5 "
+                                src="./images/spotify.png"> Listen on Spotify</button>
+                    <button class="px-5 py-3 rounded-full cursor-pointer font-semibold border border-[#00FF88] text-[#00FF88] transition-all duration-300 hover:bg-[#00ff885a] hover:text-white inline-flex gap-1"><img class="w-5 " src="/images/message.png" alt=""> Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
 </body>
 
 </html>

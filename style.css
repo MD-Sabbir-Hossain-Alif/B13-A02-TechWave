@@ -5,11 +5,40 @@
     font-family: "Inter", sans-serif;
 }
 
-nav {
+/* common class */
+nav,
+#banner-container {
     width: 75%;
     max-width: 1600px;
 }
 
+.btn {
+    position: relative;
+    background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 25px rgba(145, 0, 248, 0.4);
+}
+
+.spotify-btn {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8, #f7e93f);
+    background-size: 300% 300%;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(145, 0, 248, 0.4);
+}
+
+.btn:hover{
+    transform: scale(1.03);
+    box-shadow:
+        0 8px 25px rgba(145, 0, 248, 0.5),
+        0 0 20px rgba(251, 9, 180, 0.5);
+}
+
+
+
+/* nav section style  */
 #brand h1 span {
     background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
     background-clip: text;
@@ -20,11 +49,35 @@ nav {
     display: none;
 }
 
-#btn {
-    background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
+/* hero section style  */
+#hero {
+    background: url(./images/hero-bg.png) no-repeat center/cover;
 }
 
+#hero-image button {
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    animation: glow 2s ease-in-out infinite;
+}
 
+@keyframes glow {
+    0% {
+        box-shadow:
+            0 0 5px #00ff88,
+            0 0 10px #00ff88;
+    }
+    50% {
+        box-shadow:
+            0 0 15px #00ff88,
+            0 0 30px #00ff88;
+    }
+    100% {
+        box-shadow:
+            0 0 5px #00ff88,
+            0 0 10px #00ff88;
+    }
+}
+
+/* responsive design for 576px device */
 @media screen and (max-width: 576px) {
     #brand h1 {
         font-size: 1.75rem;
