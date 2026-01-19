@@ -9,7 +9,8 @@
 nav,
 #banner-container,
 #about,
-#choose-container {
+#choose-container,
+#footer-container {
     width: 75%;
     max-width: 1600px;
 }
@@ -41,7 +42,7 @@ nav,
 
 
 /* nav section style  */
-#brand h1 span {
+.brand h1 span {
     background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -106,5 +107,26 @@ footer{
     }
     #right-nav {
         display: none;
+    }
+
+    /* statistics responsive style */
+    #statistics{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    /* choose box responsive style  */
+    #choose-box{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    #first{
+        grid-row: span 1;
+    }
+    #second,
+    #third,
+    #fourth{
+        grid-column: span 1;
     }
 }

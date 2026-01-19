@@ -13,7 +13,7 @@
 <body>
     <header class="bg-[#1A0B2E]">
         <nav class="mx-auto text-white flex items-center gap-[280px] py-7.5">
-            <div id="brand">
+            <div class="brand">
                 <h1 class="text-white text-5xl font-extrabold">Tech<span>Wave</span></h1>
             </div>
             <div id="bars">
@@ -45,7 +45,7 @@
                 </div>
 
                 <div id="hero-content" class="text-white ">
-                    <h1 class="text-6xl font-extrabold mb-2">TechWave</h1>
+                    <h1 class="text-6xl font-extrabold mb-4">TechWave</h1>
                     <p class="opacity-80 leading-[19px]">Your daily dose of tech insights, productivity hacks, and
                         personal growth</p>
                     <div id="btns" class="space-x-2 mt-6 ">
@@ -100,48 +100,87 @@
             </div>
         </section>
 
+        <!-- choose section  -->
         <section id="choose" class=" bg-[#230e3d] py-30">
             <div id="choose-container" class="mx-auto text-white">
                 <h2 class="text-5xl font-bold text-center mb-10">About the Podcast</h2>
                 <div id="choose-box" class="grid grid-cols-3 grid-rows-3 gap-7.5">
-                    <div class="bg-[rgba(53,17,101,0.4)] p-10 rounded-[2.5rem]">
+
+                    <div id="first" class="bg-[rgba(53,17,101,0.4)] p-10 rounded-[2.5rem] row-span-2 space-y-4">
                         <img src="./images/headphone.png" alt="">
-                        <h3>Premium Audio Quality</h3>
-                        <p>Experience crystal-clear sound with professional-grade recording equipment and expert audio
+                        <h3 class="text-2xl font-bold">Premium Audio Quality</h3>
+                        <p class="opacity-60 leading-5">Experience crystal-clear sound with professional-grade recording
+                            equipment and expert audio
                             engineering. Every episode
                             is mastered for optimal listening across all devices and platforms.</p>
                     </div>
-                    <div class="">
+                    <div id="second" class="bg-[rgba(53,17,101,0.4)] p-10 rounded-[2.5rem] col-span-2 space-y-4">
                         <img src="./images/device.png" alt="">
-                        <h3>Mobile Friendly</h3>
-                        <p>Listen on the go with seamless mobile experience and offline downloads.</p>
+                        <h3 class="text-2xl font-bold">Mobile Friendly</h3>
+                        <p class="opacity-60 leading-5">Listen on the go with seamless mobile experience and offline
+                            downloads.</p>
                     </div>
-                    <div class="">
+                    <div id="third" class="bg-[rgba(53,17,101,0.4)] p-10 rounded-[2.5rem] col-span-2 space-y-4">
                         <img src="./images/location.png" alt="">
-                        <h3>Global Community</h3>
-                        <p>Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                        <h3 class="text-2xl font-bold">Global Community</h3>
+                        <p class="opacity-60 leading-5">Connect with tech enthusiasts from over 120 countries worldwide.
+                        </p>
                     </div>
-                    <div class="">
+                    <div id="fourth" class="bg-[rgba(53,17,101,0.4)] p-10 rounded-[2.5rem] col-span-2 space-y-4">
                         <img src="./images/headphone.png" alt="">
-                        <h3>Exclusive Interviews</h3>
-                        <p>Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host
+                        <h3 class="text-2xl font-bold">Exclusive Interviews</h3>
+                        <p class="opacity-60 leading-5">Get unprecedented access to industry titans, startup founders,
+                            and tech visionaries. Our host
                             secures exclusive
                             conversations you won't find anywhere else, diving deep into their journeys, failures, and
                             success strategies.</p>
                     </div>
-                    <div class="">
+                    <div class="bg-[rgba(53,17,101,0.4)] p-10 rounded-[2.5rem] space-y-4">
                         <img src="./images/headphone.png" alt="">
-                        <h3>Rich Resources</h3>
-                        <p>Access show notes, transcripts, and additional learning materials for every episode.</p>
+                        <h3 class="text-2xl font-bold">Rich Resources</h3>
+                        <p class="opacity-60 leading-5">Access show notes, transcripts, and additional learning
+                            materials for every episode.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- feature section   -->
+        <section id="feature">
+            <div id="feature-container">
+                <h2 class="text-5xl font-bold text-center mb-10">About the Podcast</h2>
             </div>
         </section>
     </main>
 
     <!-- footer section -->
     <footer>
-        <h2>This is footer</h2>
+        <div id="footer-container" class="mx-auto text-white text-center py-30 space-y-7.5">
+            <div class="brand">
+                <h1 class="text-6xl font-extrabold">Tech<span>Wave</span></h1>
+            </div>
+            <div id="social-icons" class="space-x-10 ">
+                <div class="inline-flex gap-2">
+                    <img class="w-6" src="./images/spotify.png" alt="">
+                    <p class="opacity-60 leading-[19px] font-medium">Spotify</p>
+                </div>
+                <div class="inline-flex gap-2">
+                    <img class="w-6" src="./images/apple-podcast.png" alt="">
+                    <p class="opacity-60 leading-[19px] font-medium">Apple Podcasts</p>
+                </div>
+                <div class="inline-flex gap-2">
+                    <img class="w-6" src="./images/youtube-podcast.png" alt="">
+                    <p class="opacity-60 leading-[19px] font-medium">YouTube</p>
+                </div>
+                <div class="inline-flex gap-2">
+                    <img class="w-6" src="./images/twitter.png" alt="">
+                    <p class="opacity-60 leading-[19px] font-medium">Twitter</p>
+                </div>
+            </div>
+            <div id="copyright">
+                <p class="opacity-60 leading-6.5 font-medium">© 2026 TechWave Podcast. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 
