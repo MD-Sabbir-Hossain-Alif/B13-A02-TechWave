@@ -10,7 +10,8 @@ nav,
 #banner-container,
 #about,
 #choose-container,
-#footer-container {
+#footer-container,
+#feature-container {
     width: 75%;
     max-width: 1600px;
 }
@@ -128,5 +129,10 @@ footer{
     #third,
     #fourth{
         grid-column: span 1;
+    }
+
+    /* feature section responsive style  */
+    #feature-card{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
