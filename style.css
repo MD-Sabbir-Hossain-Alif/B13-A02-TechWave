@@ -8,7 +8,7 @@
 /* common class */
 nav,
 #banner-container,
-#about,
+#about-container,
 #choose-container,
 #footer-container,
 #feature-container,
@@ -56,6 +56,9 @@ nav,
 
 /* hero section style  */
 #hero {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     background: url(./images/hero-bg.png) no-repeat center/cover;
 }
 
@@ -82,9 +85,18 @@ nav,
     }
 }
 
+/* choose style  */
+#choose {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
 
 /* footer style */
 footer{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
     background: url(./images/footer-bg.png) no-repeat center/cover;
 }
 
