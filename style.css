@@ -7,7 +7,9 @@
 
 /* common class */
 nav,
-#banner-container {
+#banner-container,
+#about,
+#choose-container {
     width: 75%;
     max-width: 1600px;
 }
@@ -75,6 +77,12 @@ nav,
             0 0 5px #00ff88,
             0 0 10px #00ff88;
     }
+}
+
+
+/* footer style */
+footer{
+    background: url(./images/footer-bg.png) no-repeat center/cover;
 }
 
 /* responsive design for 576px device */
