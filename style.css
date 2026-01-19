@@ -119,7 +119,8 @@ footer{
         width: 24px;
         height: 24px;
     }
-    #right-nav {
+    nav ul,
+    nav button {
         display: none;
     }
 
@@ -151,5 +152,10 @@ footer{
 
     #meet-content{
         flex-direction: column;
+        text-align: center;
+    }
+
+    #host-social{
+        justify-content: center;
     }
 }
