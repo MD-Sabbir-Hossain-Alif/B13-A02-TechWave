@@ -11,7 +11,8 @@ nav,
 #about,
 #choose-container,
 #footer-container,
-#feature-container {
+#feature-container,
+#meet-container {
     width: 75%;
     max-width: 1600px;
 }
