@@ -34,14 +34,12 @@ nav,
     box-shadow: 0 8px 25px rgba(145, 0, 248, 0.4);
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.03);
     box-shadow:
         0 8px 25px rgba(145, 0, 248, 0.5),
         0 0 20px rgba(251, 9, 180, 0.5);
 }
-
-
 
 /* nav section style  */
 .brand h1 span {
@@ -93,7 +91,7 @@ nav,
 }
 
 /* footer style */
-footer{
+footer {
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
@@ -102,14 +100,41 @@ footer{
 
 /* responsive design for 576px device */
 @media screen and (max-width: 576px) {
-    #brand h1 {
-        font-size: 1.75rem;
+    /* common style  */
+    #hero,
+    #about,
+    #choose,
+    #feature,
+    #meet {
+        padding: 40px 0;
     }
+
+    #hero-container,
+    #about-container,
+    #choose-container,
+    #feature-container,
+    #meet-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #about-container h2,
+    #choose-container h2,
+    #feature-container h2,
+    #meet-container h2 {
+        font-size: 2rem;
+    }
+
+    /* nav style  */
     nav {
         width: 100%;
         gap: 0;
         justify-content: space-between;
         padding: 20px;
+    }
+
+    nav h1 {
+        font-size: 2rem;
     }
 
     #bars {
@@ -124,38 +149,52 @@ footer{
         display: none;
     }
 
+    /* hero style  */
+    #hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    /* about style  */
+
+    #about-container p br {
+        display: none;
+    }
+
     /* statistics responsive style */
-    #statistics{
+    #statistics {
         grid-template-columns: repeat(2, 1fr);
         gap: 2.5rem;
     }
 
     /* choose box responsive style  */
-    #choose-box{
+    #choose-box {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
     }
 
-    #first{
+    #first {
         grid-row: span 1;
     }
     #second,
     #third,
-    #fourth{
+    #fourth {
         grid-column: span 1;
     }
 
     /* feature section responsive style  */
-    #feature-card{
+    #feature-card {
         grid-template-columns: repeat(1, 1fr);
+        place-items: center;
     }
 
-    #meet-content{
+
+    /* meet style  */
+    #meet-content {
         flex-direction: column;
         text-align: center;
     }
 
-    #host-social{
+    #host-social {
         justify-content: center;
     }
 }
