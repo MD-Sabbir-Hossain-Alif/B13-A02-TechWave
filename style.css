@@ -213,6 +213,10 @@ footer {
         display: none;
     }
 
+    #about-container p{
+        line-height: 20px ;
+    }
+
     #about-container hr {
         margin: 40px 0;
     }
@@ -227,13 +231,12 @@ footer {
     #choose-box {
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        text-align: center;
+        /* text-align: center; */
     }
 
-    /* * here i align all elements center but in figma there mobile device has all element has left (but i prefer this "for personal satisfaction") */
-    #choose-box img {
+    /* #choose-box img {
         margin: 16px auto;
-    }
+    } */
 
     #first {
         grid-row: span 1;
@@ -338,7 +341,7 @@ footer {
         font-size: 2.5rem;
     }
 
-    nav button {
+    nav ul {
         display: none;
     }
 
