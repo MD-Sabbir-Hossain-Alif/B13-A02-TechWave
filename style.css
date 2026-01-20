@@ -17,28 +17,61 @@ nav,
     max-width: 1600px;
 }
 
+/* btn animation */
 .btn {
+    --anim-duration: 3s;
+    --glow-size: 4px;
+    --c1: #f7e93f;
+    --c2: #fb09b4;
+    --c3: #9100f8;
+    --c4: #00ff88;
     position: relative;
-    background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 51%, #9100f8 100%);
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 25px rgba(145, 0, 248, 0.4);
-}
-
-.spotify-btn {
-    position: relative;
-    color: #fff;
-    font-weight: 600;
-    background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8, #f7e93f);
-    background-size: 300% 300%;
-    transition: all 0.4s ease;
-    box-shadow: 0 8px 25px rgba(145, 0, 248, 0.4);
+    background: linear-gradient(45deg, var(--c1), var(--c2), var(--c3));
+    border: none;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.15s ease;
 }
 
 .btn:hover {
-    transform: scale(1.03);
-    box-shadow:
-        0 8px 25px rgba(145, 0, 248, 0.5),
-        0 0 20px rgba(251, 9, 180, 0.5);
+    box-shadow: 3px 10px 15px rgba(145, 0, 248, 0.4);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: inherit;
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        var(--c1) 60deg,
+        var(--c2) 120deg,
+        var(--c3) 180deg,
+        var(--c4) 240deg,
+        transparent 300deg
+    );
+    opacity: 1;
+    animation: spin var(--anim-duration) linear infinite;
+    z-index: -1;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    inset: var(--glow-size);
+    background: inherit;
+    border-radius: inherit;
+    z-index: -1;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* nav section style  */
@@ -192,17 +225,16 @@ footer {
         padding: 24px !important;
     }
 
-    #choose-box > div > h3{
-        font-size: 1.40rem !important;
+    #choose-box > div > h3 {
+        font-size: 1.4rem !important;
     }
 
     /* feature section responsive style  */
     #feature-card {
         grid-template-columns: repeat(1, 1fr);
-        place-items: center;
     }
 
-    #feature-card > div > div > h4{
+    #feature-card > div > div > h4 {
         font-size: 1.25rem !important;
     }
 
@@ -212,7 +244,7 @@ footer {
         text-align: center;
     }
 
-    #info h3{
+    #info h3 {
         font-size: 1.5rem !important;
     }
 
@@ -220,3 +252,5 @@ footer {
         justify-content: center;
     }
 }
+
+@media screen and (min-width: 577px  max-width: 922px)
